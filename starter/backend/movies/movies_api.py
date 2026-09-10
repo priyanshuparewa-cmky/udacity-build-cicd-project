@@ -1,6 +1,7 @@
 from flask import Blueprint
 from .resources import Movies
 
+# Movies API blueprint definition
 movies_api = Blueprint("movies_api", __name__)
 movies = Movies.as_view("movies")
 
